@@ -1,10 +1,10 @@
-# Show Single Account
+# Show Single Pet
 
-Show a single Account if current User has access permissions to it.
+Show a single Pet if current User has access permissions to it.
 
-**URL** : `/api/accounts/:pk/`
+**URL** : `/api/Pets/:pk/`
 
-**URL Parameters** : `pk=[integer]` where `pk` is the ID of the Account on the
+**URL Parameters** : `pk=[integer]` where `pk` is the ID of the Pet on the
 server.
 
 **Method** : `GET`
@@ -13,7 +13,7 @@ server.
 
 **Permissions required** :
 
-User is at least one of the following in relation to the Account requested:
+User is at least one of the following in relation to the Pet requested:
 
 * Owner `OO`
 * Admin `AA`
@@ -23,7 +23,7 @@ User is at least one of the following in relation to the Account requested:
 
 ## Success Response
 
-**Condition** : If Account exists and Authorized User has required permissions.
+**Condition** : If Pet exists and Authorized User has required permissions.
 
 **Code** : `200 OK`
 
@@ -32,15 +32,15 @@ User is at least one of the following in relation to the Account requested:
 ```json
 {
     "id": 345,
-    "name": "Super Account",
+    "name": "Super Pet",
     "enterprise": false,
-    "url": "http://testserver/api/accounts/345/"
+    "url": "http://testserver/api/Pets/345/"
 }
 ```
 
 ## Error Responses
 
-**Condition** : If Account does not exist with `id` of provided `pk` parameter.
+**Condition** : If Pet does not exist with `id` of provided `pk` parameter.
 
 **Code** : `404 NOT FOUND`
 
@@ -48,7 +48,7 @@ User is at least one of the following in relation to the Account requested:
 
 ### Or
 
-**Condition** : If Account exists but Authorized User does not have required
+**Condition** : If Pet exists but Authorized User does not have required
 permissions.
 
 **Code** : `403 FORBIDDEN`
@@ -63,7 +63,7 @@ permissions.
 
 There are security issues:
 
-* This view allows existing users to test for existence of accounts that exist
+* This view allows existing users to test for existence of Pets that exist
     but that they do not have access to.
-* Account IDs are sequential so an authorized user can count all the Accounts
+* Pet IDs are sequential so an authorized user can count all the Pets
     on the system.
