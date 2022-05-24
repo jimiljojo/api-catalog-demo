@@ -31,4 +31,4 @@ jobs:
           CATALOG_DESCRIPTOR: './descriptor.yaml' 
           ANYPOINT_ORG_ID: '8d17d7b2-51ad-46bb-9361-304cfc011d5b'
         run: |
-          api-catalog publish-asset -d $CATALOG_DESCRIPTOR --organization="$ANYPOINT_ORG_ID" --host=https://anypoint.mulesoft.com --username="$ANYPOINT_USERNAME" --password="$ANYPOINT_PASSWORD"
+          api-catalog publish-asset -d $CATALOG_DESCRIPTOR --organization="$ANYPOINT_ORG_ID" --username="$ANYPOINT_USERNAME" --password="$ANYPOINT_PASSWORD"
