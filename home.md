@@ -53,6 +53,18 @@ permissions.
 
 **Code** : `403 FORBIDDEN`
 
+**NOTEBOOKS**
+
+```notebook
+// Authenticate client
+API.authenticate(myclient);
+```
+
+```notebook 
+//fetch info
+fetch('https://anypoint.mulesoft.com/exchange/api/v1/health').then((res) => res.json())
+```
+
 **Content** :
 
 ```json
