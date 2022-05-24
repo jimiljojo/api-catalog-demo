@@ -13,4 +13,5 @@ projects:
       - demo
       - petstore
     documentation:
-      add: home.md
+      Home: home.md
+      NewPage: home.md
