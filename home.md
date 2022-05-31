@@ -1,4 +1,4 @@
-# Show Single Pet - Forrester wave meeting with David Mooter
+# Show Single Pet 
 
 Show a single Pet if current User has access permissions to it.
 
