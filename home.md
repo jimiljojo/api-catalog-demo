@@ -4,8 +4,7 @@ Show a single Pet if current User has access permissions to it.
 
 **URL** : `/api/Pets/:pk/`
 
-**URL Parameters** : `pk=[integer]` where `pk` is the ID of the Pet on the
-server.
+**URL Parameters** : `pk=[integer]` where `pk` is the ID of the Pet on the server. This is for Dreamforce.
 
 **Method** : `GET`
 
