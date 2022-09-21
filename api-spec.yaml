@@ -16,7 +16,7 @@ host: petstore.swagger.io
 basePath: "/v2"
 tags:
 - name: pet
-  description: Everything about your Pets
+  description: Everything about your Pets and more
   externalDocs:
     description: Find out more
     url: http://swagger.io
